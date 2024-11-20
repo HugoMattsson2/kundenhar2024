@@ -1,0 +1,66 @@
+#main-wrapper{
+display: grid;
+height: 97vh;
+grid-template-columns: 15% 15% 15% 55%;
+grid-template-rows:10% 25% 30% 25% 10% ;
+grid-template-areas: 
+"hd hd hd hd"
+"rb rb rb imgst"
+"st1 it1 it1 imgst"
+"li it2 it2 imgst"
+"ftS ftI ftO ft"
+
+;
+
+
+}
+
+.header{
+grid-area: hd;
+background-color: #3498db;
+}
+
+.rubrik{
+grid-area: rb;
+}
+
+#inredningtext1{
+    grid-area: it1;
+}
+
+#inredningtext2{
+    grid-area: it2;
+}
+
+#imgstart{
+grid-area: imgst;
+
+}
+
+
+#list{
+grid-area: li;
+
+}
+
+#footer{
+    grid-area: ft;
+background-color:#3498db;
+}
+
+#footerStart{
+    grid-area: ftS;
+background-color:#3498db;
+}
+
+#footerInredning{
+    grid-area: ftI;
+background-color:#3498db;
+}
+
+#footerOmOss{
+    grid-area: ftO;
+background-color:#3498db;
+}
+
+
