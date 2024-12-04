@@ -1,4 +1,4 @@
-#main-wrapper{
+#inredning-wrapper{
 display: grid;
 height: 91.8vh;
 width: 97vw;
@@ -11,15 +11,110 @@ grid-template-areas:
 "it1 it1 it1 imgst"
 "li it2 it2 imgst"
 "ft ft ft ftF"
+;
+}
 
+
+#start-wrapper{
+display: grid;
+height: 91.8vh;
+width: 97vw;
+gap: 10px;
+grid-template-columns: 15% 15% 15% 55%;
+grid-template-rows:10% 25% 30% 25% 10% ;
+grid-template-areas: 
+"hd hd hd hd"
+"rb rb rb st1"
+"st2 st2 st2 imgst"
+"imgin imgin imgin st3"
+"ft ft ft ftF"
 ;
 
+}
+
+#OmOss-wrapper1{
+display: grid;
+height: 91.8vh;
+width: 97vw;
+gap: 10px;
+grid-template-columns: 15% 15% 15% 55%;
+grid-template-rows:10% 25% 30% 25% 10% ;
+grid-template-areas: 
+"hd hd hd hd"
+". . . ."
+". . . ."
+". . . ."
+"ft ft ft ftF"
+;
+position: fixed;
+    
+}
+
+#OmOss-wrapper2{
+    display: grid;
+    height: 91.8vh;
+    width: 97vw;
+    gap: 10px;
+    z-index: -3;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: 
+  
+    "omt1 omt2 omt3"
+    "omt4 omt5 omt6"
+  
+    ;
+        
+}
+
+#OmOssText1{
+grid-area: omt1;
+background-color: aliceblue;
+border-radius: 15px;
+border: 1px solid black;
 
 }
+#OmOssText2{
+grid-area: omt2;
+background-color: aliceblue;
+border-radius: 15px;
+border: 1px solid black;
+}
+#OmOssText3{
+grid-area: omt3;
+background-color: aliceblue;
+border-radius: 15px;
+border: 1px solid black;
+
+}
+#OmOssText4{
+grid-area: omt4;
+background-color: aliceblue;
+border-radius: 15px;
+border: 1px solid black;
+
+}
+#OmOssText5{
+grid-area: omt5;
+background-color: aliceblue;
+border-radius: 15px;
+border: 1px solid black;
+
+}
+#OmOssText6{
+grid-area: omt6;
+background-color: aliceblue;
+border-radius: 15px;
+border: 1px solid black;
+
+}
+
+
 
 .header{
 grid-area: hd;
 background-color: #3498db;
+margin-left: -10px;
 }
 
 .rubrik{
@@ -46,12 +141,44 @@ border-radius: 15px;
     border-radius: 15px;
 
 }
+
+#starttext1{
+grid-area: st1;
+background-color: aliceblue;
+border-radius: 15px;
+}
+#starttext2{
+grid-area: st2;  
+background-color: aliceblue;
+border-radius: 15px;
+}
+#starttext3{
+grid-area: st3;  
+background-color: aliceblue;
+border-radius: 15px;
+}
+
+
+
+
+
 #imgstart{
 grid-area: imgst;
 display: flex;
 height: 100%;
-
+width: 100%;
+border-radius: 10px;
 }
+
+#imginredning{
+grid-area: imgin;
+display:flex;
+height: 100%;
+width: 100%;
+border-radius: 10px;
+}
+
+
 #list{
 grid-area: li;
 background-color: aliceblue;
@@ -65,25 +192,38 @@ border-radius: 15px;
     justify-content:space-around;
     text-decoration: none;
     align-items: center;
-    padding-right: 0px !important;
+    margin-left: -10px;
+    margin-right: -10px;
+
+
 }
 
-#footer:first-child{
-background-color:red;
-}
+
 
 #footer a{
     text-decoration: none;
     text-align: center;
+    align-content: center;
     flex:auto;
     height: 100%;
-    transform: translate(50% 50%);
+    color: black;
 }
+
+#footer a:hover{
+    background-color: #3474db;
+}
+
+#footer a:active{
+    background-color: #316bc8;
+    color:rgb(52, 52, 52);
+
+}
+
 #FooterFiller{
  grid-area: ftF;
- z-index: -3;
- width: 110%;
+
  background-color:#3498db;
+
 }
 
 
