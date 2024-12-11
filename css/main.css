@@ -46,7 +46,7 @@ grid-template-areas:
 ". . . ."
 "ft ft ft ftF"
 ;
-position: fixed;
+
     
 }
 
@@ -54,60 +54,60 @@ position: fixed;
     display: grid;
     height: 91.8vh;
     width: 97vw;
-    gap: 10px;
-    z-index: -3;
+    gap: 30px;
+    
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 40% 40%;
+    justify-items: center;
+  
     grid-template-areas: 
   
     "omt1 omt2 omt3"
     "omt4 omt5 omt6"
-  
     ;
-        
+   position: absolute;     
+  
 }
 
-#OmOssText1{
+#OmOss1, #OmOss2, #OmOss3, #OmOss4, #OmOss5, #OmOss6 {
+
+    background-color: aliceblue;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 200px;
+    justify-items: center;
+    height: 200px;
+    margin-top: 63px;
+
+}
+
+#bild1, #bild2, #bild3, #bild4, #bild5, #bild6{
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+    margin-top: 20px;
+
+}
+
+#OmOss1{
 grid-area: omt1;
-background-color: aliceblue;
-border-radius: 15px;
-border: 1px solid black;
 
 }
-#OmOssText2{
-grid-area: omt2;
-background-color: aliceblue;
-border-radius: 15px;
-border: 1px solid black;
-}
-#OmOssText3{
-grid-area: omt3;
-background-color: aliceblue;
-border-radius: 15px;
-border: 1px solid black;
 
-}
-#OmOssText4{
-grid-area: omt4;
-background-color: aliceblue;
-border-radius: 15px;
-border: 1px solid black;
+#OmOss2{
+grid-area: omt2;}
 
-}
-#OmOssText5{
-grid-area: omt5;
-background-color: aliceblue;
-border-radius: 15px;
-border: 1px solid black;
+#OmOss3{
+grid-area: omt3;}
 
-}
-#OmOssText6{
-grid-area: omt6;
-background-color: aliceblue;
-border-radius: 15px;
-border: 1px solid black;
+#OmOss4{
+grid-area: omt4;}
 
-}
+#OmOss5{
+grid-area: omt5;}
+
+#OmOss6{
+grid-area: omt6;}
 
 
 
