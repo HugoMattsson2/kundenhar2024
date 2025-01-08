@@ -86,7 +86,7 @@ grid-template-areas:
     width:70px;
     height:70px;
     margin-top: 20px;
-
+    object-fit: cover;
 }
 
 #OmOss1{
